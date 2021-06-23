@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Css and Head sections -->
+<head>
+    <!-- Theme Made By FC CTAPT -->
+    <title>FC CTAPT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+        h3, h4 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+
+
+
+
+        .carousel-indicators{
+            top:0px;
+        }
+        .container {
+            padding: 80px 120px;
+        }
+        .container1 {
+
+        }
+        .person {
+            border: 10px solid transparent;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 80%;
+            opacity: 0.9;
+        }
+        .person:hover {
+            border-color: #f1f1f1;
+        }
+        .carousel-inner img {
+            /* make all photos black and white */
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+        }
+        .carousel-caption h3 {
+            color: #fff !important;
+        }
+
+        @media (max-width: 600px) {
+            .trycar{
+                display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+            }
+            .container{
+                display: none;
+            }
+            .navbar{
+                display: none;
+            }
+            .footer{
+                visibility: hidden;
+                display: none;
+            }
+
+        }
+
+
+        @media (min-width: 600px) {
+            .container1{
+                display: none;
+            }
+            .navbar1{
+                display: none;
+            }
+            .footer1{
+                display: none;
+            }
+            .carousel1{
+                display: none;
+            }
+        }
+        .bg-1 {
+            background: #2d2d30;
+            color: #bdbdbd;
+        }
+        .bg-1 h3 {color: #fff;}
+        .bg-1 p {font-style: italic;}
+        .list-group-item:first-child {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+        .list-group-item:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        .thumbnail p {
+            margin-top: 15px;
+            color: #555;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #f1f1f1;
+            border-radius: 0;
+            transition: .2s;
+        }
+        .btn:hover, .btn:focus {
+            border: 1px solid #333;
+            background-color: #fff;
+            color: #000;
+        }
+        .modal-header, h4, .close {
+            background-color: #333;
+            color: #fff !important;
+            text-align: center;
+            font-size: 30px;
+        }
+        .modal-header, .modal-body {
+            padding: 40px 50px;
+        }
+
+
+
+        .nav-tabs li a {
+            color: #777;
+        }
+
+
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+            color: #d5d5d5 !important;
+        }
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+        .dropdown-menu li a:hover {
+            background-color: red !important;
+        }
+        .navbar1 {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+
+        .navbar1 li a, .navbar1 .navbar1-brand1 {
+            color: #d5d5d5 !important;
+        }
+        .navbar1-nav1 li a:hover {
+            color: #fff !important;
+        }
+        .navbar1-nav1 li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+        .navbar1-default .navbar1-toggle {
+            border-color: transparent;
+        }
+        .open1 .dropdown1-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+        .dropdown1-menu li a {
+            color: #000 !important;
+
+        }
+        .dropdown1-menu li a:hover {
+            background-color: red !important;
+        }
+        .nav1-tabs li a {
+            color: #777;
+        }
+
+
+        footer {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 5px;
+        }
+        footer a {
+            color: #f5f5f5;
+        }
+        footer a:hover {
+            color: #777;
+            text-decoration: none;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body id="PageTop" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- Top navigation bar desktop version -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#PageTop">FC-CTAPT</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="home.html">HOME</a></li><!-- links to section -->
+                <li><a href="home.html">TEAM</a></li>
+                <li><a href="#home.html">STANDING</a></li>
+                <li><a href="#home.html">GALLERY</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Coming Soon</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--View point navbar for pixel -->
+<div class=navibar1>
+    <nav class="navbar1 navbar-default navbar-fixed-top" ><!--navbar1-fixed1-top responsible for top space -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1"> <!--data-target="#myNavbar1" responsible for dropdown -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">FC-CTAPT</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="standig.html">STANDING</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+<!-- Container Statistics -->
+<div id="tactics" class="container-fluid" >
+    <br>
+    <br>
+    <h3 class="text-center">STATISTICS</h3>
+    <div class="row">
+        <div class="col-md-4"><img src="table1.png" width="400" height="400"  >  </div>
+        <div class="col-md-4"><img src="vladCTAPT70.png" width="70%"  ></div>
+        <div class="col-md-4"><div class='table-responsive '>
+            <!--Table-->
+            <table id="tablePreview1" class="table  table-bordered table-hover">
+                <!--Table head-->
+                <thead style="background-color: #000;">
+                <tr style=" color: white">
+                    <th scope="col">Name</th>
+                    <th scope="col">Vlad Bordiug</th>
+                </tr>
+                </thead>
+                <!--Table head-->
+                <!--Table body-->
+                <tbody>
+                <tr>
+                    <th scope="row">Games played</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Scored</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Assists</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">Yellow Cards</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Red Cards</th>
+                    <td>0</td>
+                </tr>
+                </tbody>
+                <!--Table body-->
+            </table>
+            <!--Table-->
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Footer fro dekstop version -->
+<div class="footer"><!--div class="footer"  enable to hide it with @media .footer{} -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#PageTop" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Website Made By <a href="https://www.vlad.page" data-toggle="tooltip" title="Visit Vlad.page">Vlad Bordiug</a></p>
+        <a href="https://www.youtube.com/channel/UCJBalyf3u_iYJ1ZQ86NkUPg?view_as=subscriber" title="Website name"><i style="font-size:24px" class="fa">&#xf167;</i></a>&nbsp<a href="https://www.facebook.com/FC.CTAPT/" title="Website name"><i style='font-size:24px' class='fab'>&#xf09a;</i></a>&nbsp<a href="https://www.instagram.com/fc_ctapt_/" title="Website name"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+    </footer>
+</div>
+<!------------▲▲Pixel Code▲▲------------------->
+
+
+
+<!------------▼▼Desktop Code▼▼----------------->
+<!-- Footer fro pixel version -->
+<div class="footer1"><!--div class="footer"  enable to hide it with @media .footer{} -->
+    <footer class="text-center">
+        <a href="https://www.youtube.com/channel/UCJBalyf3u_iYJ1ZQ86NkUPg?view_as=subscriber" title="Website name"><i style="font-size:24px" class="fa">&#xf167;</i></a>&nbsp<a href="https://www.facebook.com/FC.CTAPT/" title="Website name"><i style='font-size:24px' class='fab'>&#xf09a;</i></a>&nbsp<a href="https://www.instagram.com/fc_ctapt_/" title="Website name"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+    </footer>
+</div>
+<!-- Scripts -->
+<script>
+    $(document).ready(function(){
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+</script>
+</body>
+</html>
